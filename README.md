@@ -2,9 +2,17 @@
 
 Table of Content:
 
-Part 1.
+[ Introduction ](https://github.com/Lakhwinder1/Kubernetes#introduction)
 
-[Step 1 — Setting Up Hello World Deployments]: Step1—SettingUpHelloWorldDeployments	"Step 1 — Setting Up Hello World Deployments"
+[Prerequisites](https://github.com/Lakhwinder1/Kubernetes#prerequisites)
+
+[Step 1 — Setting Up Hello World Deployments](https://github.com/Lakhwinder1/Kubernetes#step-1--setting-up-hello-world-deployments)
+
+[Step 2 — Installing the Kubernetes Nginx Ingress Controller](https://github.com/Lakhwinder1/Kubernetes#step-2--installing-the-kubernetes-nginx-ingress-controller)
+
+[Step 3 — Exposing the App Using an Ingress](https://github.com/Lakhwinder1/Kubernetes#step-3--exposing-the-app-using-an-ingress)
+
+
 
 *The author selected the [Free and Open Source Fund](https://www.brightfunds.org/funds/foss-nonprofits) to receive a donation as part of the [Write for DOnations](https://do.co/w4do-cta) program.*
 
@@ -40,7 +48,6 @@ Add the following lines:
 
 ```
 							hello-kubernetes-first.yaml
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -121,7 +128,6 @@ $ nano hello-kubernetes-second.yaml
 
 ```
 							hello-kubernetes-second.yaml
-							
 apiVersion: v1
 kind: Service
 metadata:
@@ -290,7 +296,6 @@ Add the following lines to your file:
 
 ```
 							hello-kubernetes-ingress.yaml
-							
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -501,7 +506,6 @@ Add the following lines:
 
 ```
 								production_issuer.yaml
-
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
 metadata:
@@ -548,7 +552,6 @@ Add the highlighted lines:
 
 ```
 							hello-kubernetes-ingress.yaml
-
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
