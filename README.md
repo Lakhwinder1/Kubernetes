@@ -1,4 +1,4 @@
-![](images/ingress_without_lb (2).drawio)
+![](images/ingress_without_lb.drawio)
 # How To Set Up an Nginx Ingress on DigitalOcean Kubernetes Using Helm
 
 Table of Content:
