@@ -2,17 +2,23 @@
 
 Table of Content:
 
-[ Introduction ](https://github.com/Lakhwinder1/Kubernetes#introduction)
+1. [ Introduction ](https://github.com/Lakhwinder1/Kubernetes#introduction)
 
-[Prerequisites](https://github.com/Lakhwinder1/Kubernetes#prerequisites)
+2. [Prerequisites](https://github.com/Lakhwinder1/Kubernetes#prerequisites)
 
-[Step 1 — Setting Up Hello World Deployments](https://github.com/Lakhwinder1/Kubernetes#step-1--setting-up-hello-world-deployments)
+3. Part-1
 
-[Step 2 — Installing the Kubernetes Nginx Ingress Controller](https://github.com/Lakhwinder1/Kubernetes#step-2--installing-the-kubernetes-nginx-ingress-controller)
+   [Step 1 — Setting Up Hello World Deployments](https://github.com/Lakhwinder1/Kubernetes#step-1--setting-up-hello-world-deployments)
 
-[Step 3 — Exposing the App Using an Ingress](https://github.com/Lakhwinder1/Kubernetes#step-3--exposing-the-app-using-an-ingress)
+   [Step 2 — Installing the Kubernetes Nginx Ingress Controller](https://github.com/Lakhwinder1/Kubernetes#step-2--installing-the-kubernetes-nginx-ingress-controller)
 
+   [Step 3 — Exposing the App Using an Ingress](https://github.com/Lakhwinder1/Kubernetes#step-3--exposing-the-app-using-an-ingress)
 
+4. [Conclusion](https://github.com/Lakhwinder1/Kubernetes#conclusion)
+
+5. Part-2
+
+   [Securing the Ingress Using Cert-Manager](https://github.com/Lakhwinder1/Kubernetes#step-4--securing-the-ingress-using-cert-manager)
 
 *The author selected the [Free and Open Source Fund](https://www.brightfunds.org/funds/foss-nonprofits) to receive a donation as part of the [Write for DOnations](https://do.co/w4do-cta) program.*
 
@@ -47,7 +53,7 @@ Add the following lines:
 ​							
 
 ```
-							hello-kubernetes-first.yaml
+hello-kubernetes-first.yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -127,7 +133,7 @@ $ nano hello-kubernetes-second.yaml
 ​										            
 
 ```
-							hello-kubernetes-second.yaml
+hello-kubernetes-second.yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -295,7 +301,7 @@ $ nano hello-kubernetes-ingress.yaml
 Add the following lines to your file:
 
 ```
-							hello-kubernetes-ingress.yaml
+hello-kubernetes-ingress.yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -505,7 +511,7 @@ $ nano production_issuer.yaml
 Add the following lines:
 
 ```
-								production_issuer.yaml
+production_issuer.yaml
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
 metadata:
@@ -551,7 +557,7 @@ $ nano hello-kubernetes-ingress.yaml
 Add the highlighted lines:
 
 ```
-							hello-kubernetes-ingress.yaml
+hello-kubernetes-ingress.yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
